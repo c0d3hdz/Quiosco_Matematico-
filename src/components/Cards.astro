@@ -1,0 +1,136 @@
+---
+---
+<section>
+    <div class="Content">
+        <h2>Proyectos</h2>
+        <div class="grids">
+            <a href="https://operaciones-con-conjuntos.vercel.app" target="_blank">
+                <div class="cards ">
+                    <figure class="card p_1">
+                        <figcaption class="card_title">Teoria de Conjuntos</figcaption>
+                    </figure>
+                </div>
+            </a>
+            <a href="https://logica-matematica-psi.vercel.app" target="_blank">
+                <div class="cards">
+                    <figure class="card p_2">
+                        <figcaption class="card_title">Logica Matematica</figcaption>
+                    </figure>
+                </div>
+            </a>
+            <a href="https://arboles-binarios.vercel.app">
+                <div class="cards">
+                    <figure class="card p_3">
+                        <figcaption class="card_title">Arboles y Grafos</figcaption>
+                    </figure>
+                </div>
+            </a>
+            <a href="">
+                <div class="cards">
+                    <figure class="card">
+                        <figcaption class="card_title">Pronto...</figcaption>
+                    </figure>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<style>
+    .Content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+        height: 100%;
+    }
+    .grids {
+        width: 800px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        div {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            height: 250px;
+        }
+
+    }
+    
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+    .p_1 {
+        background-image: url(../assets/image/teoria_conjuntos.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .p_2{
+        background-image: url(../assets/image/logica_matematica.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .p_3{
+        background-image: url(../assets/image/arboles.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .cards {
+    perspective: 500px;
+    }
+
+    .card {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    position: relative;
+    top: -30px;
+    left: -40px;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+    box-shadow: 0 0 20px rgba(121, 255, 48, 0.614);
+    }
+
+    .card:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+    }
+
+    .card_title {
+    color: rgb(175, 255, 95);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+    font: 700 1.5rem monospace;
+    text-shadow: -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    }
+
+    .card:hover .card_title {
+    transform: translateZ(50px);
+    }
+    @media screen and (max-width: 800px) {
+        .grids {
+            width: 100%;
+            padding: 0 1rem;
+        }
+
+        
+    }
+</style>
