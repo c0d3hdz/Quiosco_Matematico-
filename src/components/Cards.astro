@@ -18,17 +18,10 @@
                     </figure>
                 </div>
             </a>
-            <a href="https://arboles-binarios.vercel.app">
+            <a href="https://arboles-binarios.vercel.app" target="_blank">
                 <div class="cards">
                     <figure class="card p_3">
                         <figcaption class="card_title">Arboles y Grafos</figcaption>
-                    </figure>
-                </div>
-            </a>
-            <a href="">
-                <div class="cards">
-                    <figure class="card">
-                        <figcaption class="card_title">Pronto...</figcaption>
                     </figure>
                 </div>
             </a>
@@ -50,6 +43,11 @@
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 1rem;
     }
+    .grids > a:nth-child(3) {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 392px;
+    }
 
     a {
         text-decoration: none;
@@ -64,6 +62,14 @@
     
     h2 {
         margin-bottom: 1rem;
+        font-size: 5rem;
+        font-weight: 700;
+        background-image:linear-gradient(90deg, #00c3ff, #3cff00);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        text-align: center;
+
     }
 
     h3 {

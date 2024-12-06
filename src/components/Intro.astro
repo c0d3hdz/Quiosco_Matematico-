@@ -8,6 +8,22 @@ import Cards from './Cards.astro';
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
 	<main>
 		<Header/>
+			<section>
+				<h2>
+					Bienvenidos
+				</h2>
+				<span>
+					¡Hola! Te presento los proyectos que desarrollé a lo largo de mi primer semestre en la universidad.
+					Utilizando mi conocimiento previo junto al nuevo conocimiento que aprendí, desarrollé tres proyectos distintos que te invito a conocer.
+					<br>
+					<strong>Los tres están basados en temas de Matemáticas Discretas:</strong>
+					<ul>
+						<li> <strong>Teoría de Conjuntos</strong>: este es un generador de diagramas de Venn, donde también se agregaron las operaciones básicas de dicho tema.</li>
+						<li><strong>Lógica Matemática</strong> : este es un generador de tablas de verdad, donde se pueden agregar proposiciones y realizar las operaciones básicas de la lógica proposicional.</li>
+						<li><strong>Árboles</strong>: este es un generador de árboles, donde puedes agregar nodos y arcos, ayudando a mejorar la visualización de estos mismos.</li>
+					</ul>
+				</span>
+			</section>
 		<Cards/>
 	</main>
 </div>
@@ -32,5 +48,39 @@ import Cards from './Cards.astro';
 		height: 100%;
 		display: flex;
 		flex-direction: column;
+	}
+	section{
+		margin: 0 auto;
+		width: 800px;
+		h2{
+			font-size: 2.5rem;
+			margin-bottom: 1rem;
+			color: #58ff2a;
+		}
+		span{
+			font-size: 1rem;
+			color: #000000;
+			strong{
+				margin-top: 50px;
+				color: #58ff2a;
+			}
+			ul{
+				list-style: none outside ;
+				line-height-step: 1.5;
+			}
+			li{
+				margin-top: 10px;
+			}
+			p{
+				margin-top: 50px;
+			};
+		}
+	}
+	@media screen and (max-width: 800px) {
+		section {
+			width: 100%;
+			padding: 0 1rem;
+		}
+		
 	}
 </style>

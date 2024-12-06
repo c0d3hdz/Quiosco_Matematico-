@@ -1,10 +1,18 @@
 ---
+import LogoTEC from '../assets/image/logoTEC.png';
+import LogoITSH from '../assets/image/logoITSH.png';
 ---
 <header>
     <span style="display: flex; justify-content: center; align-items: center;"><p>Kiosco</p>👨‍💻</span>
     <span><p>Matematico</p></span>
 </header>
 <p class="dev">By:c0d3hdz</p>
+<div class="LogoTec">
+    <img src={LogoTEC.src} alt="LogoTEC"/>
+</div>
+<div class="LogoITsH">
+    <img src={LogoITSH.src} alt="LogoITSH"/>
+</div>
 <style>
     header{
         font-weight: bold;
@@ -21,6 +29,28 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
+    }
+    .LogoTec{
+        position: fixed;
+        left: -40px;
+        top: 70%;
+        img{
+            opacity: 0.3;
+            rotate: -45deg;
+            width: 450px;
+            height: 450px;
+        }
+    }
+    .LogoITsH{
+        position: fixed;
+        right: 40px;
+        top: -2%;
+        img{
+            opacity: 0.3;
+            rotate: 45deg;
+            width: 450px;
+            height: 450px;
+        }
     }
     @media screen and (max-width: 600px){
         header{
